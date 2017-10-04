@@ -1,0 +1,23 @@
+h1 {
+    color: tomato;
+}
+
+p {
+    color: brown;
+}
+
+strong {
+    color: cyan;
+}
+
+em {
+    color: green;
+}
+
+ul {
+    style=background-color:rgb(125,125,125);
+}
+
+li {
+    color: yellow;
+}
