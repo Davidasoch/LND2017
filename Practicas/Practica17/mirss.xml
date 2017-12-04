@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+	  <title>Web educativa imaginaria</title>
+	  <link>http://mipractica.com</link>
+    <description>una web gratis para aprender</description>
+    <category>Educacion</category>
+    <language>es</language>
+
+	
+		<item>
+			<title>tecnicas de estudio</title>
+			<link>http://www.minoticia1.html</link>
+			<description>blablablablablablablabla1</description>
+			    <author>Micorreo@gmail.com (david ramirez)</author>
+		</item>
+		
+				<item>
+			<title>Estudios superiores</title>
+						<link>http://www.minoticia2.html</link>
+					<description>blablablablablablablabla2</description>
+					<comments>https://www.micomment.com/comments</comments>
+		</item>
+		
+				<item>
+			<title>Preparacion de oposiciones</title>
+						<link>http://www.minoticia3.html</link>
+					<description>blablablablablablablabla3</description>
+		</item>
+		
+	</channel>
+</rss>
