@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+
+
+<html>
+    
+
+    <head>
+     <link rel="stylesheet" href="ejercicio.css">
+    </head>
+<body>
+    
+<fieldset id="a1">
+ <legend> Tu cara </legend>
+ <div>
+       <label for="Nombre">Foto:</label>
+      <input name="file-input" id="file-input" type="file" />
+     </div>
+    <p>Previsualizacion de imagen:</p>
+    <img id="imgSalida" width="50%" height="50%" src="" />
+    
+        <script>
+    $(window).load(function(){
+
+ $(function() {
+  $('#file-input').change(function(e) {
+      addImage(e); 
+     });
+
+     function addImage(e){
+      var file = e.target.files[0],
+      imageType = /image.*/;
+    
+      if (!file.type.match(imageType))
+       return;
+  
+      var reader = new FileReader();
+      reader.onload = fileOnload;
+      reader.readAsDataURL(file);
+     }
+  
+     function fileOnload(e) {
+      var result=e.target.result;
+      $('#imgSalida').attr("src",result);
+     }
+    });
+  });
+        </script>
+   <br>
+    
+    </fieldset>
+    <br>
+    <fieldset id="a1">
+ <legend> Datos generales </legend>
+     
+        
+        <form>
+
+    <div>
+  <label for="name">Nombre:</label>
+           
+  <input type="text" name="firstname"><br>
+    </div>
+        
+    
+<div>      
+ <label for="genero">Genero:</label>
+         <input type="radio" name="gender" value="male" > Hombre 
+         <input type="radio" name="gender" value="female"> Mujer
+  </div>  
+
+        <div>
+            <label for="edad">Edad:</label>
+        <input type="number" name="edad"  min="18" max="150">
+      </div>
+  
+  <div>
+<label for="edad">Fecha de nacimiento</label>
+<input type="date" name="bday" min="1900-12-31" max="1979-12-31">
+</div>
+    
+   <div>
+    <label for="edad">Color favorito:</label>
+  <input type="color" name="favcolor" value="#ff0000">
+   </div>
+    
+ <div>
+    <label for="edad">Pais:</label>
+  <select name="paises">
+    <option value="volvo">España</option>
+    <option value="saab">Uruguay</option>
+    <option value="fiat">Finlandia</option>
+    <option value="audi">Inglaterra</option>
+  </select>
+</div>
+        
+        </fieldset>
+    <br>
+      <fieldset id="a1">
+         <legend> Otras caracteristicas </legend>
+        <div>
+                <label for="edad">Altura</label>
+     <span class="s">Bajo</span>
+  <input type="range" name="points" min="0" max="10">
+     <span class="z">Alto</span>
+            </div>
+                <div>
+                 <label for="edad">Salario</label>
+     <span class="s">Pobre</span>
+  <input type="range" name="points" min="0" max="10">
+     <span class="z">Rico</span>
+            </div>
+    
+    </fieldset>
+    <br>
+     <fieldset id="a1">
+        <legend>Informacion de contacto</legend>
+              <div>
+          <label for="met">Email:</label>
+  <input type="email" name="addres"><br>
+        </div>
+        
+        <div>
+           <label for="met">Movil:</label>
+  <input type="text" name="phone"><br>
+        </div>
+        
+     <div>
+        <label for="msg">Direccion:</label>
+       <textarea name="dir" rows="10" cols="40"></textarea>
+    </div>
+        
+        <div>
+            <form>
+        <label for="met">Metodo de contacto:</label>
+  <input type="checkbox" name="email" value="Email"> Email
+  <input type="checkbox" name="wp" value="Whatsapp"> Whatsapp
+  <input type="checkbox" name="skype" value="Skype"> Skype
+</form>
+        </div>
+    </fieldset>
+
+        
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,23 @@
+#a1{
+    border-color:yellow;
+    border-style:solid;
+    border-width:10px;
+    background-color:lightyellow;
+    
+}
+
+div {
+  margin: .4em 0;
+}
+div label {
+  width: 25%;
+  float: left;
+}
+
+.s{
+    background-color:red;
+}
+
+.z{
+        background-color:blue;
+}

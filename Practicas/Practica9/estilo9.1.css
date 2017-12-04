@@ -1,0 +1,60 @@
+body{
+    margin:0;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+        background-color: lightgrey;
+
+
+}
+
+
+header {
+    color: white;
+    padding: 5px;
+    
+    text-align: center;
+    background-color: black;
+
+}
+
+
+
+aside{
+        background-color: lightgrey;
+    float: left;
+    width: 120px;
+    height: 300px;
+    padding: 15px;
+    
+}
+
+article{
+
+    float: left;
+    width: 40%;
+    height: 90%;
+    padding: 15px;
+    
+}
+
+
+
+
+footer{
+    
+    color: white;
+    clear:both;
+     text-align: center;
+    float:bottom;
+    background-color: black;
+}
+
+
+
