@@ -6,26 +6,34 @@
     <description>una web gratis para aprender</description>
     <category>Educacion</category>
     <language>es</language>
+<copyright>2017 GNU License</copyright>
+		<lastBuildDate>Wed, 02 Oct 2002 08:00:00 EST</lastBuildDate>
 
 	
 		<item>
+			<guid>https://www.minoticiaA.com/xml/item0768</guid>
 			<title>tecnicas de estudio</title>
 			<link>http://www.minoticia1.html</link>
 			<description>blablablablablablablabla1</description>
 			    <author>Micorreo@gmail.com (david ramirez)</author>
+			  <pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
 		</item>
 		
 				<item>
+			<guid>https://www.minoticiaB.com/xml/item0768</guid>
 			<title>Estudios superiores</title>
-						<link>http://www.minoticia2.html</link>
-					<description>blablablablablablablabla2</description>
-					<comments>https://www.micomment.com/comments</comments>
+			<link>http://www.minoticia2.html</link>
+			<description>blablablablablablablabla2</description>
+			<comments>https://www.micomment.com/comments</comments>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
 		</item>
 		
 				<item>
+			<guid>https://www.minoticiaC.com/xml/item0768</guid>
 			<title>Preparacion de oposiciones</title>
-						<link>http://www.minoticia3.html</link>
-					<description>blablablablablablablabla3</description>
+			<link>http://www.minoticia3.html</link>
+			<description>blablablablablablablabla3</description>
+			<pubDate>Wed, 02 Oct 2002 08:00:00 EST</pubDate>
 		</item>
 		
 	</channel>
