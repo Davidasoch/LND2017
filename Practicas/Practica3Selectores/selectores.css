@@ -1,0 +1,21 @@
+body{
+    text-align:center;
+
+    display: block;
+}
+
+.sol{
+    background-color:lightgray;
+        padding: 5px;
+    border:1px solid black;
+    
+}
+
+
+ /*ejercicio 1*/ p > span { color: blue; }
+ 
+/*ejercicio 2*/  p a { color: red; }
+
+                p > a { color: red; }
+
+                h1 + h2 { color: red }

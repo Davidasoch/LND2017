@@ -1,0 +1,29 @@
+/**
+a:link {color: red;}
+a:visited {color: blue;}
+a:hover {color: fuchsia;}
+**/
+
+
+
+body{
+    text-align:center;
+
+    display: block;
+}
+
+.sol{
+    background-color:lightgray;
+        padding: 5px;
+    border:1px solid black;
+    text-decoration: none;
+
+    
+}
+
+p:first-line {letter-spacing: 6pt;}
+p.definicion:first-letter {font-size: 300%; color: red; }
+
+
+p.sol:first-line {letter-spacing:normal}
+

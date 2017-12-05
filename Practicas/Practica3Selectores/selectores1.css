@@ -1,0 +1,24 @@
+/**
+a:link {color: red;}
+a:visited {color: blue;}
+a:hover {color: fuchsia;}
+**/
+
+
+
+body{
+    text-align:center;
+
+    display: block;
+}
+
+.sol{
+    background-color:lightgray;
+        padding: 5px;
+    border:1px solid black;
+    
+}
+
+a:link {color: red; text-decoration: none;}
+a:visited {color: blue; text-decoration: none;}
+a:hover {color: red; text-decoration: underline;}

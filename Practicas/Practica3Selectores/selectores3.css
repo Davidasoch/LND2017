@@ -1,0 +1,20 @@
+/**
+a:link {color: red;}
+a:visited {color: blue;}
+a:hover {color: fuchsia;}
+**/
+
+
+
+body { font-family: Arial; color: black; }
+h1 { font-family: Verdana; }
+p { color: red; }
+
+.sol{
+    background-color:lightgray;
+        padding: 5px;
+    border:1px solid black;
+    text-decoration: none;
+    color: black;
+    
+}
