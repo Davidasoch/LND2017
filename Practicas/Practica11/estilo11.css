@@ -37,12 +37,25 @@ color:aliceblue;
 }
 
 .flex-container {
-      justify-content: center;
+    justify-content: center;
     display: flex;
-      align-items: stretch;
+      -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
     
     
 }
+
+
+.columna1, 
+.columna2, 
+.columna3 {
+  width: 100%;
+}
+
+
+
+
 
 
 
@@ -50,7 +63,7 @@ color:aliceblue;
 
     background-color: lightgrey;
  
-    width: 400px;
+    width: 25%;
     border:1px solid black;
     padding: 15px;
     margin:10px;
@@ -61,21 +74,25 @@ color:aliceblue;
     
 }
 
-.this{
+@media (max-width: 992px) {
 
-    background-color: lightgrey;
- 
-    width: 400px;
-    border:1px solid black;
-    padding: 15px;
-    margin:10px;
-    height: 200px;
-    margin: 10px;
-    flex-grow: 8;
+
+#tablet {
+
+     -webkit-order: 1;
+    order: 1;
+    width: 100%;
 
     
+    }
 }
 
+
+@media (max-width: 767px) {
+    .flex-container>div {
+        width: 100%;
+        
+    }
 
 
 * {
