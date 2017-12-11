@@ -1,0 +1,223 @@
+ /* caracteristicas globales de estilo*/
+
+*{
+    margin:0;
+    padding:0;
+        box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+        height: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+ /* caracteristicas que seran flex*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+  flex-direction: wrap;
+    text-align: center;
+
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+     border:1px solid black;
+
+
+}
+
+ /* noticias de la pagina web*/
+
+.article {
+        padding: 15px;
+    text-align: justify;
+    background:#eeeeee;
+    height:100%;
+
+}
+
+.article2 {
+    text-align: justify;
+    background:#0277bd;
+    padding: 15px;
+         border:1px solid black;
+
+}
+
+#this{
+    text-align: center;
+}
+
+ /* colores del layout*/
+
+header {background: #004c8c;color:white;}
+footer {background: #58a5f0;color:white;   float:bottom;}
+.nav {background:#0277bd;}
+.nav2 {background:#0277bd;}
+
+ /* listas del layout */
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #0277bd;
+    overflow: hidden;
+    margin-top:-16px;
+    margin-left:-16px;
+    margin-right:-16px;
+        
+
+    
+
+}
+.nav ul a {
+    text-decoration: none;
+        height: 80%;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+.nav2 ul a {
+    text-decoration: none;
+}
+
+
+ /* lista desplegable*/
+
+li {
+   margin:0;
+   padding:-5px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #58a5f0;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         border:1px solid black;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: lightgray}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+i.mfont{
+
+    font-size: 50px;
+
+
+font-family: 'Indie Flower', cursive;
+}
+
+ /*tabla del ranking*/
+
+table,th, td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:black;
+}
+th {
+    padding: 5px;
+    background: #004c8c;
+}
+
+td{
+        padding: 5px;
+
+    background: #0277bd;
+        color: white;
+
+}
+
+ /* imagenes y videos de la galeria*/
+
+img{
+
+	display:block;
+    width:125px;
+    height:125px;
+    margin:10px auto;
+    
+}
+
+iframe{
+    	margin:10px auto;
+	display:block;
+}
+
+ /* estructura de los formularios */
+
+#a1{
+
+    border-color: #004c8c;
+    border-style:solid;
+    border-width:10px;
+    background-color:#0277bd;
+    padding: 10px;
+    
+}
+
+div label {
+  width: 25%;
+  float: left;
+}
+
+ul.advantages{
+    text-align: center;
+}
+
+ /* propiedades responsive*/
+
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+        .article2 {-webkit-flex:5 0px;flex:5 0px;-webkit-order:3;order:3;}
+        .nav2 {text-align:left;-webkit-flex: 5 auto;flex:1 auto;-webkit-order:4;order:4;}
+    footer {-webkit-order:5;order:5;}
+    img{width:500px; height:300px;}
+
+}
