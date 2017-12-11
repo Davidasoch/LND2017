@@ -158,6 +158,7 @@ table,th, td {
     border: 1px solid black;
     border-collapse: collapse;
     color:black;
+    border-radius: 15px;
 }
 th {
     padding: 5px;
