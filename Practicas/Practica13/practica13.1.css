@@ -1,0 +1,13 @@
+
+
+
+.little, i.little{
+    font-size: 16px;
+}
+.medium, i.medium{
+    font-size: 24px;
+}
+.big, i.big{
+    font-size: 50px;
+font-family: 'Indie Flower', cursive;
+}
