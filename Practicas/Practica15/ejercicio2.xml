@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<persona
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio2.xsd">
+
+<datos>
+<nombre>Alicia</nombre>
+<apellidos>Wonder</apellidos>
+<dni>25390933</dni>
+<edad>23</edad>
+</datos>
+<comentario>buena gente...</comentario>
+</persona>

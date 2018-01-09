@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<!-- definition of simple elements -->
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="apellidos" type="xs:string"/>
+<xs:element name="dni" type="xs:string"/>
+<xs:element name="comentario" type="xs:string"/>
+
+<xs:element name="edad">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="120"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- definition of complex elements -->
+<xs:element name="datos">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nombre"/>
+ <xs:element ref="apellidos"/>
+  <xs:element ref="dni"/>
+  <xs:element ref="edad"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="persona">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="datos"  maxOccurs="unbounded"/>
+<xs:element ref="comentario"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+
+</xs:schema>

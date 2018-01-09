@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<!-- definition of simple elements -->
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="email" type="xs:string"/>
+
+<xs:element name="relacion">
+  <xs:complexType>
+    <xs:attribute name="amigo_de" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+
+
+<!-- definition of attributes -->
+<xs:attribute name="sexo" type="xs:string"/>
+<xs:attribute name="id" type="xs:string"/>
+<xs:attribute name="amigo_de" type="xs:string"/>
+
+<!-- definition of complex elements -->
+<xs:element name="listin">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="persona"  maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+<xs:element name="persona">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nombre"/>
+  <xs:element ref="email"/>
+    <xs:element ref="relacion"   minOccurs="0"/>
+ </xs:sequence>
+  <xs:attribute ref="sexo"/>
+  <xs:attribute ref="id"/>
+ </xs:complexType>
+</xs:element>
+
+
+
+
+
+</xs:schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<listin 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio4.xsd">
+<persona sexo="hombre" id="ricky">
+<nombre>Ricky Fernández</nombre>
+<email>ricky@puerto-rico.com</email>
+<relacion amigo_de="leticia"></relacion>
+</persona>
+<persona sexo="mujer" id="leticia">
+<nombre>Leticia Camacho</nombre>
+<email>camacho@micasa.com</email>
+</persona>
+</listin>

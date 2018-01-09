@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Libro
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+
+<Título>Las uvas de la ira</Título>
+<Autores>Allen Wyke</Autores>
+<Autores>Andrew Watt</Autores>
+<Editorial>Wiley</Editorial>
+</Libro>
