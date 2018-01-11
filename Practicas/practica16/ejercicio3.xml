@@ -1,0 +1,30 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+
+<banco
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicio3.xsd">
+<documento>
+  <nombre_entidad>Santander</nombre_entidad>
+  <fecha>2018-01-12</fecha>
+  <datos>
+  <id>456217983248</id>
+  <nombre>Pablo</nombre>
+  <apellidos>rodriguez</apellidos>
+  <telefono>670453299</telefono>
+  <direccion>
+  <tipo_calle>avenida</tipo_calle>
+  <nombre_calle>grancanaria</nombre_calle>
+  <numero>752</numero>
+  <piso_letra>1A</piso_letra>
+  <cp>35600</cp>
+    <provincia>las palmas</provincia>
+  <localidad>puerto</localidad>
+  </direccion>
+  </datos>
+    <prestamos>
+    <nprestamo>0248963485</nprestamo>
+    <concepto>parabarcos</concepto>
+    <cantidad>2500</cantidad>
+    </prestamos>
+</documento>
+</banco>

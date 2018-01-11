@@ -1,0 +1,17 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+
+
+<producto
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="helado2.xsd">
+<helado>
+  <tipo_helado>tarrina</tipo_helado>
+  <tipo_sabor>fresa</tipo_sabor>
+  <tipo_tamaño>pequeño</tipo_tamaño>
+</helado>
+<helado>
+  <tipo_helado>cornete</tipo_helado>
+  <tipo_sabor>limon</tipo_sabor>
+  <tipo_tamaño>mediano</tipo_tamaño>
+</helado>
+</producto>

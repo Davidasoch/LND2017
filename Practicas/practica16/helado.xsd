@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<!-- definition of simple elements -->
+<xs:element name="tipo">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="polo"/>
+      <xs:enumeration value="cornete"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="sabor">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="nata"/>
+      <xs:enumeration value="fresa"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- definition of complex elements -->
+<xs:element name="helado">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="tipo"/>
+ <xs:element ref="sabor"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="producto">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="helado" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+
+
+</xs:schema>

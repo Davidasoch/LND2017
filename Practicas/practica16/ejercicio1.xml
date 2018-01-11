@@ -1,0 +1,15 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+
+
+<producto
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="helado.xsd">
+<helado>
+  <tipo>polo</tipo>
+  <sabor>fresa</sabor>
+</helado>
+<helado>
+  <tipo>cornete</tipo>
+  <sabor>nata</sabor>
+</helado>
+</producto>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<!-- definition of simple elements -->
+
+<xs:element name="fecha" type="xs:date"/>
+
+<xs:element name="nombre_entidad">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="nombre">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="apellidos">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="id">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="telefono">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="tipo_calle">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="calle"/>
+      <xs:enumeration value="avenida"/>
+      <xs:enumeration value="plaza"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="nombre_calle">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="numero">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="piso_letra">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9][A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="localidad">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+<xs:element name="cp">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="provincia">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+<xs:element name="nprestamo">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9]{10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="concepto">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="cantidad">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="300"/>
+      <xs:maxInclusive value="200000"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+
+
+
+<!-- definition of complex elements -->
+
+<xs:element name="banco">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="documento"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="documento">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nombre_entidad"/>
+ <xs:element ref="fecha"/>
+  <xs:element ref="datos"/>
+    <xs:element ref="prestamos"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="datos">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="id"/>
+  <xs:element ref="nombre"/>
+   <xs:element ref="apellidos"/>
+    <xs:element ref="telefono"/>
+     <xs:element ref="direccion"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="direccion">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="tipo_calle"/>
+  <xs:element ref="nombre_calle"/>
+      <xs:element ref="numero"/>
+   <xs:element ref="piso_letra"/>
+     <xs:element ref="cp"/>
+      <xs:element ref="provincia"/>
+       <xs:element ref="localidad"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="prestamos">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nprestamo"/>
+  <xs:element ref="concepto"/>
+   <xs:element ref="cantidad" maxOccurs="2"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+
+
+</xs:schema>
+

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+
+<!-- definition of simple elements -->
+<xs:element name="tipo_helado">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="tarrina"/>
+      <xs:enumeration value="cornete"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="tipo_tamaño">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="pequeño"/>
+      <xs:enumeration value="mediano"/>
+      <xs:enumeration value="grande"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="tipo_sabor">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="chocolate"/>
+      <xs:enumeration value="fresa"/>
+      <xs:enumeration value="vainilla"/>
+      <xs:enumeration value="limon"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+
+
+
+<!-- definition of complex elements -->
+<xs:element name="helado">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="tipo_helado"/>
+ <xs:element ref="tipo_sabor"/>
+  <xs:element ref="tipo_tamaño"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="producto">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="helado" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+
+
+</xs:schema>
