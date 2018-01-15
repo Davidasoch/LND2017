@@ -1,0 +1,54 @@
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
+
+<recetas
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Documento1.xsd">
+<receta nombre="Pulpo" numeroDePersonas="6">
+<ingredientes>
+<ingrediente>Pulpo</ingrediente>
+<ingrediente>Papas</ingrediente>
+<ingrediente>pimienta</ingrediente>
+<ingrediente>Aceitedeoliva</ingrediente>
+<ingrediente>Salgorda</ingrediente>
+</ingredientes>
+<preparacion>
+<paso>
+Hervir en una
+<utensilio>olladecobre</utensilio>
+abundante agua. Meter el pulpo, sacarlo inmediatamente y volver a meterlo cuando vuelva a hervir. Repetir tres veces.
+</paso>
+<paso>Dejar cocer junto con las papas.</paso>
+<paso>
+Cortar y condimentar con sal, pimentón y aceite de oliva. Servir en
+<utensilio>platos de madera</utensilio>
+</paso>
+</preparacion>
+</receta>
+<receta nombre="Lapas">
+<ingredientes>
+<ingrediente>Lapas</ingrediente>
+<ingrediente>Cebolla</ingrediente>
+<ingrediente>Ajo</ingrediente>
+<ingrediente>Pan rallado</ingrediente>
+<ingrediente>Pimienta negra machacada</ingrediente>
+<ingrediente>Vino blanco</ingrediente>
+<ingrediente>Aceite de oliva</ingrediente>
+<ingrediente>Perejil</ingrediente>
+<ingrediente>Guindilla</ingrediente>
+</ingredientes>
+<preparacion>
+<paso>
+En una
+<utensilio>cazuela de barro</utensilio>
+rehogar en aceite de oliva media cebolla picada muy fina.
+</paso>
+<paso>
+Añadir a la cebolla dos cucharadas soperas de pan rallado y esperar a que esté tostado.
+</paso>
+<paso>
+Echar medio litro de auga, una pizca de guindilla, sal y un vaso pequeño de vino blanco. Esperar a que comience a hervir.
+</paso>
+<paso>Añadir las lapas y dejar cocer.</paso>
+</preparacion>
+</receta>
+</recetas>

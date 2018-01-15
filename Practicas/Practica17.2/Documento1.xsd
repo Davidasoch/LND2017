@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="recetas">
+<xs:complexType>
+    <xs:sequence>
+      <xs:element name="receta" maxOccurs="unbounded">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="ingredientes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ingrediente" type="xs:string" maxOccurs="unbounded"/>
+                 </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+          <xs:element name="preparacion">
+          <xs:complexType>
+          <xs:sequence>
+          <xs:element name="paso" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType mixed="true">
+          <xs:sequence>
+                    <xs:element name="utensilio" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+          </xs:complexType>
+          </xs:element>
+          </xs:sequence>
+          </xs:complexType>
+          </xs:element>
+      </xs:sequence>
+        <xs:attribute name="nombre" type="xs:string"/>
+        <xs:attribute name="numeroDePersonas" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+
