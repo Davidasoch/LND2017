@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- definition of simple elements -->
+<xs:element name="nombre">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-zA-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="pasiva">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-z A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="nombreo">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-z A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="habilidad">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-z A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="aspecto">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+     <xs:pattern value="[a-z A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="valor" type="xs:integer"/>
+
+<xs:element name="precio" type="xs:integer"/>
+
+<xs:element name="enfriamiento" type="xs:integer"/>
+
+<xs:element name="velocidad" type="xs:integer"/>
+
+<xs:element name="item" type="xs:string"/>
+
+<xs:element name="critico" type="xs:integer"/>
+
+
+<!-- definition of complex elements -->
+<xs:element name="Juego">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="campeones"/>
+  <xs:element ref="objetos"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="campeones">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="campeon" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="campeon">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nombre"/>
+  <xs:element ref="habilidades"/>
+    <xs:element ref="aspectos"/>
+ </xs:sequence>
+ <xs:attribute type="xs:string" name="tipo"/>
+ </xs:complexType>
+</xs:element>
+
+
+<xs:element name="habilidades">
+ <xs:complexType>
+ <xs:sequence>
+  <xs:element ref="pasiva"/>
+ <xs:element ref="habilidad" maxOccurs="4"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="aspectos">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="aspecto" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+<xs:element name="objetos">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="objeto" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+<xs:element name="objeto">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="nombreo"/>
+  <xs:element ref="precio"/>
+  <xs:element ref="valor"/>
+  <xs:element ref="enfriamiento" minOccurs="0"/>
+    <xs:element ref="velocidad" minOccurs="0"/>
+    <xs:element ref="critico" minOccurs="0"/>
+    <xs:element ref="receta"/>
+ </xs:sequence>
+  <xs:attribute type="xs:string" name="tipo"/>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="receta">
+ <xs:complexType>
+ <xs:sequence>
+ <xs:element ref="item" maxOccurs="unbounded"/>
+ </xs:sequence>
+ </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

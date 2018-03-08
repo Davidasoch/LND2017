@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Juego xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="proyectoLND.xsd">
+
+<campeones>
+
+<campeon tipo="Mago">
+<nombre>Viktor</nombre>
+
+<habilidades>
+<pasiva>Evoluciongloriosa</pasiva>
+<habilidad>Trasferencia de potencia</habilidad>
+<habilidad>Campo gravitatorio</habilidad>
+<habilidad>Rayo de la muerte</habilidad>
+<habilidad>Tormenta del caos</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Viktor creador</aspecto>
+<aspecto>Viktor mecanizado</aspecto>
+<aspecto>Viktor prototipo</aspecto>
+<aspecto>Viktor robocop</aspecto>
+</aspectos>
+
+</campeon>
+
+<campeon tipo="Asesino">
+<nombre>Ahri</nombre>
+
+<habilidades>
+<pasiva>Robo de esencias</pasiva>
+<habilidad>Orbe del</habilidad>
+<habilidad>Fuego zorruno</habilidad>
+<habilidad>Hechizar</habilidad>
+<habilidad>Impulso espiritual</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Ahri raposa ignea</aspecto>
+<aspecto>Ahri aspirante</aspecto>
+<aspecto>Ahri de recreativas</aspecto>
+</aspectos>
+
+</campeon>
+
+<campeon tipo="Luchador">
+<nombre>Irelia</nombre>
+
+<habilidades>
+<pasiva>Fervor Jonio</pasiva>
+<habilidad>Embate de espada</habilidad>
+<habilidad>Estilo Hiten</habilidad>
+<habilidad>Golpe de Equilibrio</habilidad>
+<habilidad>Hojas Trascendentes</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Irelia hoja nocturna</aspecto>
+<aspecto>Irelia hoja gelida</aspecto>
+<aspecto>Irelia aviadora</aspecto>
+</aspectos>
+
+</campeon>
+
+
+<campeon tipo="Tanque">
+<nombre>Malphite</nombre>
+
+<habilidades>
+<pasiva>Escudo de granito</pasiva>
+<habilidad>Fragmento sismico</habilidad>
+<habilidad>Ataques brutales</habilidad>
+<habilidad>Golpe en el suelo</habilidad>
+<habilidad>Fuerza imparable</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Malphite trebol</aspecto>
+<aspecto>Malphite mecha</aspecto>
+<aspecto>Malphite gelido</aspecto>
+</aspectos>
+
+</campeon>
+
+
+<campeon tipo="Apoyo">
+<nombre>Nami</nombre>
+
+<habilidades>
+<pasiva>Oleaje</pasiva>
+<habilidad>Prision de agua</habilidad>
+<habilidad>Resaca y oleada</habilidad>
+<habilidad>Bendicion de la marea</habilidad>
+<habilidad>Maremoto</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Nami de las profundidades</aspecto>
+<aspecto>Urf el namiti</aspecto>
+<aspecto>Nami koi</aspecto>
+</aspectos>
+
+</campeon>
+
+<campeon tipo="Mago">
+<nombre>Syndra</nombre>
+
+<habilidades>
+<pasiva>Trascendencia</pasiva>
+<habilidad>Esfera oscura</habilidad>
+<habilidad>Fuerza de voluntad</habilidad>
+<habilidad>Dispersar a los debiles</habilidad>
+<habilidad>Poder desatado</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Syndra dia nevado</aspecto>
+<aspecto>Syndra reina de picas</aspecto>
+<aspecto>Syndra guardiana de las estrellas</aspecto>
+</aspectos>
+
+</campeon>
+
+<campeon tipo="Tirador">
+<nombre>Ashe</nombre>
+
+<habilidades>
+<pasiva>Tiro congelador</pasiva>
+<habilidad>Concentracion maxima</habilidad>
+<habilidad>Descarga</habilidad>
+<habilidad>Disparo de halcon</habilidad>
+<habilidad>Flecha de cristal encantada</habilidad>
+</habilidades>
+
+<aspectos>
+<aspecto>Ashe de campeonato</aspecto>
+<aspecto>Ashe yelmo sombrio</aspecto>
+<aspecto>Proyecto Ashe</aspecto>
+</aspectos>
+
+</campeon>
+
+</campeones>
+
+<objetos>
+
+<objeto tipo="ad">
+<nombreo>Filo fantasmal de youmuu</nombreo>
+<precio>2900</precio>
+<valor>55</valor>
+<enfriamiento>10</enfriamiento>
+<velocidad>40</velocidad>
+<receta>
+<item>Martillo de guerra</item>
+<item>Daga dentada</item>
+</receta>
+</objeto>
+
+<objeto tipo="ph">
+<nombreo>Baston del vacio</nombreo>
+<precio>2650</precio>
+<valor>70</valor>
+<receta>
+<item>Vara explosiva</item>
+<item>Tomo amplificador</item>
+</receta>
+</objeto>
+
+
+
+<objeto tipo="armadura">
+<nombreo>Tabi de ninja</nombreo>
+<precio>1100</precio>
+<valor>30</valor>
+<receta>
+<item>Botas de velocidad</item>
+<item>Armadura de tela</item>
+</receta>
+</objeto>
+
+
+<objeto tipo="vida">
+<nombreo>Redencion</nombreo>
+<precio>2100</precio>
+<valor>200</valor>
+<receta>
+<item>Botas de velocidad</item>
+<item>Armadura de tela</item>
+</receta>
+</objeto>
+
+<objeto tipo="as">
+<nombreo>Punal de statik</nombreo>
+<precio>2600</precio>
+<valor>30</valor>
+<critico>30</critico>
+<receta>
+<item>Fervor</item>
+<item>Fragmento de kircheis</item>
+</receta>
+</objeto>
+
+
+</objetos>
+
+</Juego>
