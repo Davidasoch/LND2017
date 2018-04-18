@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var num = prompt("Introduzca un numero");
+            var value=1;
+            var index=num;
+            
+function recursion(){
+    if(index!=1){
+        value=value*index;
+        index-=1;
+        recursion();
+    }
+}
+            recursion();
+            alert(value);
+        </script>
+    </body>
+</html>
