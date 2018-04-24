@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var colores = ["blue","cyan","gold","gray","green","magenta","orange","red","white","yellow"];
+            var target_index = Math.floor((Math.random() * 9) + 1);
+            var target = colores[target_index];
+            var fin=false;
+            
+            do {
+            var guess_input = prompt("I am thinking of one of these colors"+colores+"What color am i thinking of?");
+            fin = check_guess();    
+
+            }
+            while (fin!=true); 
+            
+            function check_guess(){
+                var i;
+                for (i = 0; i < colores.length; i++) {
+                    if(colores[i]==guess_input){
+                        if(guess_input==target){
+                alert("Yeah Correct!");
+myBody=document.getElementsByTagName("body")[0];
+myBody.style.background=target;
+                return true;
+
+            }else{
+               alert("Wrong color!");
+                if(guess_input>target){
+                    alert("Your color is higher");
+                }else alert("Your color is lower");
+                return false;
+            }
+                    }
+                }
+                 alert("I dont recognize it!");
+                 return false;
+            }
+        </script>
+    </body>
+</html>
