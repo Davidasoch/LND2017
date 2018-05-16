@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var text = "";
+var i=0;
+while(i<cars.length){
+    text += cars[i] + "<br>";
+    i+=1;
+}
+    
+
+document.getElementById("demo").innerHTML = text;
+    // la propiedad inner html permite añadir al cuerpo html el contenido de una string
+</script>
+
+</body>
+</html>

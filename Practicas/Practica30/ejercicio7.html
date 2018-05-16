@@ -1,0 +1,42 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <body>
+        <script>
+            var bebidas = [];
+            var bebidasname =[];
+            var answer="";
+            var index=0;
+            var pos=0;
+            
+            bebidasname[0]="Cocacola";
+            bebidasname[1]="Fanta";
+            bebidasname[2]="Sevenup";
+            
+            
+            do{
+             answer = prompt("¿Te gusta la bebida "+bebidasname[index]+"?");                   
+                if(answer!="si"){
+                    index+=1;
+                    continue;
+
+                }
+                
+                 bebidas[pos]=bebidasname[index];
+                index+=1;
+                pos+=1;
+                               
+            }while(index!=3);
+            if(bebidas.length!=0){
+                
+        document.write(bebidas.length);
+        
+        for(var value of bebidas){
+        document.write(" "+value);
+        }
+            }else document.write("No te gusta ninguna bebida");
+
+            
+        </script>
+        
+    </body>
+</html>

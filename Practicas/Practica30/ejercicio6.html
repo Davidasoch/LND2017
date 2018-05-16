@@ -1,0 +1,25 @@
+<html>
+    <body>
+        
+    <script>
+        var fin=false;
+        var arrayamijos= [];
+        var amijo;
+    do {
+        amijo = prompt("Dime el nombre de tu amijo");
+        
+        if(amijo=="fin"){
+            break;
+        }else{
+            arrayamijos.push(amijo);
+        }
+
+    } while (fin!=true);
+        
+            for(var value of arrayamijos){
+        document.write(" "+value);
+    }
+        </script>
+        
+        </body>
+</html>

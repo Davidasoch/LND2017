@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>    
+<body>
+
+<script>
+var nums=[];
+var i;
+var ran;
+    for(i=0;i<99;i++){
+        ran =Math.floor((Math.random() * 100) + 1);
+        nums[i]=ran;
+    }
+    
+    for(var value of nums){
+        document.write(" "+value);
+    }
+    
+    document.write("<br>");
+    
+       for (var valor in nums) {
+      document.write(" "+nums[valor]);
+   }
+        document.write("<br>");
+    
+    nums.forEach(function (element){
+        document.write(" "+element);
+    });
+    
+    
+
+
+    
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<meta charset="utf-8" />
+
+<title>Práctica 32b - DOM básico</title>
+
+<style type="text/css">
+.oculto { display: none; }
+.visible { display: inline; }
+</style>
+
+<script type="text/javascript">
+function muestra() {
+    document.getElementById("adicional").className="visible";
+    document.getElementById("enlace").className="oculto";
+    
+    //ejercicio2
+    var parrafo2 = document.getElementById("texto");
+    var parrafo3 = document.getElementById("adicional");
+    parrafo3.appendChild(parrafo2);
+
+}
+    function borrado(){
+        //ejercicio1
+        var parrafo = document.getElementById("adicional");
+        parrafo.parentNode.removeChild(parrafo);
+        
+        //ejercicio3
+        var parrafo3 = document.createTextNode("Hazlo simple: tan simple como sea posible, pero no más.");
+        var parrafo2 = document.getElementById("texto");
+        parrafo2.appendChild(parrafo3);
+    }
+</script>
+</head>
+
+<body>
+
+<p id="texto">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. <span id="adicional" class="oculto" onclick="borrado();">Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id metus.</span></p>
+<a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo</a>
+
+</body>
+</html>
